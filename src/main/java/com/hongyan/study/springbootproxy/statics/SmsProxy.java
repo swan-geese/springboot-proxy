@@ -26,10 +26,10 @@ public class SmsProxy {
     }
 
     private void before() {
-        log.info("statics before send sms");
+        log.info("statics before invoke");
     }
 
     private void after() {
-        log.info("statics after send sms");
+        log.info("statics after invoke");
     }
 }

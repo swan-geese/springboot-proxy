@@ -32,10 +32,10 @@ public class DebugInvocationHandler implements InvocationHandler {
     }
 
     private void before() {
-        log.info("jdk dynamic before send sms");
+        log.info("jdk dynamic before invoke");
     }
 
     private void after() {
-        log.info("jdk dynamic after send sms");
+        log.info("jdk dynamic after invoke");
     }
 }

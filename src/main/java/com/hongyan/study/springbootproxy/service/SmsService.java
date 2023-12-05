@@ -9,4 +9,6 @@ package com.hongyan.study.springbootproxy.service;
 public interface SmsService {
 
     String send(String message);
+
+    String send();
 }

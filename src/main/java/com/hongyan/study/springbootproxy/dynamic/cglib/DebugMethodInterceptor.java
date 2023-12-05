@@ -11,6 +11,9 @@ import java.lang.reflect.Method;
  * @version 1.0
  * @date Created in 2023/11/7 2:48 PM
  * @description cglib动态代理：自定义MethodInterceptor
+ * 此 MethodInterceptor 为 cglib 的拦截器，用于拦截 Service 层的方法， 并非 AspectJ 的 MethodInterceptor
+ * AspectJ MethodInterceptor : org.aopalliance.intercept.MethodInterceptor
+ * cglib MethodInterceptor : net.sf.cglib.proxy.MethodInterceptor
  */
 
 @Slf4j
@@ -34,10 +37,10 @@ public class DebugMethodInterceptor implements MethodInterceptor {
 
 
     private void before() {
-        log.info("cglib dynamic before send sms");
+        log.info("cglib dynamic before invoke");
     }
 
     private void after() {
-        log.info("cglib dynamic after send sms");
+        log.info("cglib dynamic after invoke");
     }
 }

@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Premain-Class: com.hongyan.study.springbootproxy.asm.PreMain
+Can-Redefine-Classes: true
